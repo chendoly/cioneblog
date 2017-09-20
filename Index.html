@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/index_js.js"></script>
+	<style>
+		/*自定义字体*/
+		@font-face {
+				      font-family: 'Arciform';
+				      src: url('font/Arciform.otf') format('OpenType')
+    				}
+
+    	@font-face{
+    				font-family: 'Adobecaslonpro';
+				      src: url('font/Adobecaslonpro.otf') format('OpenType');
+    	}
+
+
+		/* 布局样式 */
+		#header{height: 280px;padding: 10px 0 0 0} 
+		#about{height: 200px;height: 100% !important;;} 
+		#contact{height: 250px;} 
+		.gallery_header{height: 80px;line-height: 80px;}
+		.gallery{height: 350px;margin: 0 0 20px}
+		#footer{text-align: center;}
+		.content_color_black{color: #5d5d5d}
+		.content_color_pink{color:#e369a8;}
+		.title_font{font-family: Arciform}
+		.p_font{font-family: Adobecaslonpro}
+
+		/*图片样式*/
+		.img-wrap{height: 350px;position: relative;}/*width: 400px;margin: 30px auto;*/
+		/* 图片外层CSS */
+		.imgs_src{width: 100%;height: 100%;transform: scale(1);transition: 1s;display: block}
+		/* 图片载入的样式 */
+		/* 图片描述层 */
+		.img_container{position: absolute;left: 1.5rem;bottom: 1.5rem;color: #101010;font-size: 26px;z-index: 20;}
+		.img_span{width:0;overflow: hidden;display: inline-block;height: 30px;line-height: 30px;}
+		/* 描述层标题 */
+		.img_strong{opacity: 0}
+		/* 描述层正文 */
+		.img_maskparent{position: absolute;height: 100%;width: 100%}
+		.img_mask{z-index: 10;position: absolute;width:auto;visibility:hidden;opacity: 0;transition: 1s;background-image:-webkit-linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,1));height: 100%;width: 100%}
+		/* 图片遮盖层 */
+
+	</style>
+</head>
+<body>
+	<div class="container">
+	<div id="header"><img src="imgs/logo.png" alt=""></div>
+	<div class="row content_color_black">
+		<div id="about" class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+			<h2 class="title_font">About Me<span class="content_color_pink">_</span></h2>
+			<p class="p_font">Shiyun Sharon Zhou is a freelance designer and developer and for the past eight years he's worked for some of the UK's best digital agencies;producing award-winning work wherever he's been.</p>
+			<p class="p_font">Working at the very highest level as both a senior developer and senior designer,Colin provides his experience,knowledge and expertise to clients offering them something more than your average freelance.</p>
+		</div>
+		<div id="contact" class="col-lg-9 col-lg-offset-9 col-md-9 col-md-offset-9 col-sm-12 col-xs-12">
+			<h2 class="title_font">Contact<span class="content_color_pink">_</span></h2>
+			<div class="p_font">
+			<p>Email:</p>
+			<p>sharoncione@gmail.com</p>
+			<p>Phone:</p>
+			<p>1(213)393-9368</p>
+			<p>Blog:</p>
+			</div>
+		</div>
+	</div>
+	<div>
+		<h2 class="gallery_header content_color_black title_font">Design<span class="content_color_pink title_font">_interactive/graphic</span></h2>
+				<div class="row">
+				<div class="gallery col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<a href="gallery_1.html" target="_blank">
+					<div class="img-wrap" id="img1"> 
+						<!-- 图片外层 -->
+						<!-- 遮盖层 -->
+						<div class="img_maskparent">
+							<div class="img_mask"></div>
+						</div>
+						<!-- 载入图片 -->
+						<img src="imgs/123.jpg" class="imgs_src">
+						<!-- 图片描述 -->
+						<div class="img_container">
+						<h2 >
+							<span class="img_span">title: eclipse green tea</span>
+						</h2>
+						<strong class="img_strong">medium:branding</strong>
+						</div>
+					</div>
+					</a>
+				</div>
+				<div class="gallery col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<a href="gallery_1.html" target="_blank">
+					<div class="img-wrap" id="img2"> 
+						<div class="img_maskparent">
+							<div class="img_mask"></div>
+						</div>
+						<img src="imgs/123.jpg" class="imgs_src">
+						<div class="img_container">
+						<h2 >
+							<span class="img_span">helloworld</span>
+						</h2>
+						<strong class="img_strong">Web design</strong>
+						</div>
+					</div>
+					</a>
+				</div>
+				<div class="gallery col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<a href="gallery_1.html" target="_blank">
+					<div class="img-wrap" id="img3"> 
+						<div class="img_maskparent">
+							<div class="img_mask"></div>
+						</div>
+						<img src="imgs/123.jpg" class="imgs_src">
+						<div class="img_container">
+						<h2 >
+							<span class="img_span">helloworld</span>
+						</h2>
+						<strong class="img_strong">Web design</strong>
+						</div>
+					</div>
+					</a>
+				</div>
+				<div class="gallery col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<a href="gallery_1.html" target="_blank">
+					<div class="img-wrap" id="img4"> 
+						<div class="img_maskparent">
+							<div class="img_mask"></div>
+						</div>
+						<img src="imgs/123.jpg" class="imgs_src">
+						<div class="img_container">
+						<h2 >
+							<span class="img_span">helloworld</span>
+						</h2>
+						<strong class="img_strong">Web design</strong>
+						</div>
+					</div>
+					</a>
+				</div>
+				</div>
+
+		<h2 class="gallery_header content_color_black title_font">Art<span class="content_color_pink title_font">_painting/charcoal/drawing</span></h2>
+				<div class="row">
+					<div class="gallery col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<a href="gallery_1.html" target="_blank">
+						<div class="img-wrap" id="img5"> 
+							<div class="img_maskparent">
+								<div class="img_mask"></div>
+							</div>
+							<img src="imgs/123.jpg" class="imgs_src">
+							<div class="img_container">
+							<h2 >
+								<span class="img_span">helloworld</span>
+							</h2>
+							<strong class="img_strong">Web design</strong>
+							</div>
+						</div>
+						</a>
+					</div>
+					<div class="gallery col-lg-6 col-md-6 col-sm-12 col-xs-12">
+						<a href="gallery_1.html" target="_blank">
+						<div class="img-wrap" id="img6"> 
+							<div class="img_maskparent">
+								<div class="img_mask"></div>
+							</div>
+							<img src="imgs/123.jpg" class="imgs_src">
+							<div class="img_container">
+							<h2 >
+								<span class="img_span">helloworld</span>
+							</h2>
+							<strong class="img_strong">Web design</strong>
+							</div>
+						</div>
+						</a>
+					</div>
+				</div>
+	</div>
+	
+	<div id="footer" class="center-block "><img src="imgs/footer_icon.png" alt=""> 2017 - Shiyun Zhou — Coded by doly chan</div>
+
+	</div>
+	
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

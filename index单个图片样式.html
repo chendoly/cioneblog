@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+
+	<title></title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<!-- 此文档引用了jquery，上边为引用信息 -->
+
+	<style type="text/css">
+		*{margin: 0;padding: 0;font-weight:normal;}
+		body{font-family: 'Relevant-Normal',Helvetica,Arial,sans-serif;font-size: 10px;}
+		/* body默认样式 */
+
+		.img-wrap{width: 400px;height: 400px;margin: 30px auto;position: relative;}
+		/* 图片外层CSS */
+
+		.imgs_src{width: 100%;height: 100%;transform: scale(1);transition: 1s;}
+		/* 图片载入的样式 */
+
+		/* 图片描述层 */
+		.img_container{position: absolute;left: 1.5rem;bottom: 1.5rem;color: #101010;font-size: 26px;z-index: 20;}
+		.img_span{width:0;overflow: hidden;display: inline-block;height: 30px;line-height: 30px;}
+		/* 描述层标题 */
+		.img_strong{opacity: 0}
+		/* 描述层正文 */
+		
+		.img_maskparent{position: absolute;}
+		.img_mask{z-index: 10;position: absolute;height: 400px;width: 400px;visibility:hidden;opacity: 0;transition: 1s;background-image:-webkit-linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,1))}
+		/* 图片遮盖层 */
+
+		#img2{position: absolute;top: 400px;}
+	</style>
+
+	<script type="text/javascript">
+	//这里是单个图片的效果
+		$(function(){
+			$('#img1').mouseover(function(){	//鼠标移入时候
+				$('#img1').find('.img_mask').css("visibility","inherit").css("opacity","1");
+				// 显示遮盖层
+				$('#img1').	find(".imgs").css({"transform":"scale(0.9)"});	
+				//缩小图片
+				$('#img1').find(".img_span").stop(true).animate({width:"100%"});
+				//描述标题以滚动的方式出来
+				$('#img1').	find(".img_strong").stop(true).animate({opacity:"1"},"linear")
+				//描述正文显示
+				
+			}).mouseout(function(){  //鼠标移出时候
+				$('#img1').find('.img_mask').css('visibility','hidden').css('opacity','0');
+				//隐藏遮盖层
+				$(".imgs").css({"transform":"scale(1)"});
+				//还原图片
+				$(".img_span").stop(true).animate({width:"0"});
+				//描述标题以滚动的方式隐藏
+				$(".img_strong").stop(true).animate({opacity:"0"},"linear")
+				//描述正文隐藏
+			})
+		})
+
+	</script>
+</head>
+<body>
+	<div class="img-wrap" id="img1"> 
+		<!-- 图片外层 -->
+
+		<!-- 遮盖层 -->
+		<div class="img_maskparent">
+			<div class="img_mask"></div>
+		</div>
+
+		<!-- 载入图片 -->
+		<img src="imgs/123.jpg" class="imgs_src">
+
+		<!-- 图片描述 -->
+		<div class="img_container">
+		<h2 >
+			<span class="img_span">helloworld</span>
+		</h2>
+		<strong class="img_strong">Web design</strong>
+		</div>
+	</div>
+	
+</body>
+</html>

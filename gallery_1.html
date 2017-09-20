@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style>
+		/*自定义字体*/
+		@font-face {
+				     font-family: 'Arciform';
+				     src: url('font/Arciform.otf') format('OpenType')
+    				}
+		@font-face{
+    				font-family: 'Adobecaslonpro';
+				      src: url('font/Adobecaslonpro.otf') format('OpenType');
+    	}
+
+
+		/* 布局样式 */
+		.img_return{height: 40px;margin: 20px 0}
+		.gallery_header{height: 60px}
+		.gallery_content{height: 200px;margin: 0 0 20px}
+		.gallery_content_main{border: 1px solid #000;height: 100%;padding: 10px 0 0 10px;}
+		.gallery_content_side{border: 1px solid #000;height: 100%;padding: 10px 0 0 10px;}
+		.img_detail{height: 700px;display: block;margin: 0 0 40px}
+		#footer{text-align: center;}
+
+		.content_color_black{color: #5d5d5d}
+		.content_color_pink{color:#e369a8;}
+		.title_font{font-family: Arciform}
+		.p_font{font-family: Adobecaslonpro;}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div><a href="index.html"><img src="imgs/return.jpg" alt="" class="img_return"></a></div>
+		<h2 class="gallery_header title_font content_color_black">Title<span class="content_color_pink title_font">_medium</span></h2>
+		<div class="gallery_content row content_color_black p_font">
+			<div class="gallery_content_main col-lg-9 col-md-9 col-sm-12 col-xs-12">
+				<p>CRNR [kawr-ner] is a video game news and reviews website with a large focus on user gencerated content including article feedback, news comenting and blogs which are dynamically pulled in to staffs editorial posts.</p>
+			</div>
+			<div class="gallery_content_side col-lg-3 col-md-3 col-sm-12 col-xs-12">
+				<p>medium:</p>
+				<p>design/interactive design</p>
+			</div>
+		</div>
+		<div class="row">	
+			<img src="imgs/123.jpg" class="img_detail col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<img src="imgs/123.jpg" class="img_detail col-lg-12 col-md-12 col-sm-12 col-xs-12">	
+			<img src="imgs/123.jpg" class="img_detail col-lg-12 col-md-12 col-sm-12 col-xs-12">		
+		</div>
+
+		<div id="footer" class="center-block"><img src="imgs/footer_icon.png" alt=""> 2017 - Shiyun Zhou — Coded by doly chan</div>
+
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
