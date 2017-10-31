@@ -30,10 +30,10 @@
 
 		/* 布局样式 */
 		#header{height: 280px;padding: 10px 0 0 0} 
-		#about{height: 200px;height: 100% !important;;} 
+		#about{height: 200px;height: 100% !important;} 
 		#contact{height: 250px;} 
 		.gallery_header{height: 80px;line-height: 80px;}
-		.gallery{height: 350px;margin: 0 0 20px}
+		.gallery{height: 100%;margin: 0 0 20px}
 		#footer{text-align: center;}
 		.content_color_black{color: #5d5d5d}
 		.content_color_pink{color:#e369a8;}
@@ -41,19 +41,26 @@
 		.p_font{font-family: Adobecaslonpro}
 
 		/*图片样式*/
-		.img-wrap{height: 350px;position: relative;}/*width: 400px;margin: 30px auto;*/
+		.img-wrap{position: relative;}/*width: 400px;margin: 30px auto;*/
 		/* 图片外层CSS */
-		.imgs_src{width: 100%;height: 100%;transform: scale(1);transition: 1s;display: block}
+		.imgs_src{width: 100%;transform: scale(1);transition: 1s;display: block}
 		/* 图片载入的样式 */
 		/* 图片描述层 */
-		.img_container{position: absolute;left: 1.5rem;bottom: 1.5rem;color: #101010;font-size: 26px;z-index: 20;}
+		.img_container{position: absolute;left: 0px;bottom: 20px;color: #101010;font-size: 26px;z-index: 20;}
 		.img_span{width:0;overflow: hidden;display: inline-block;height: 30px;line-height: 30px;}
 		/* 描述层标题 */
 		.img_strong{opacity: 0}
 		/* 描述层正文 */
 		.img_maskparent{position: absolute;height: 100%;width: 100%}
-		.img_mask{z-index: 10;position: absolute;width:auto;visibility:hidden;opacity: 0;transition: 1s;background-image:-webkit-linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,1));height: 100%;width: 100%}
+		.img_mask{z-index: 10;position: absolute;width:auto;visibility:hidden;opacity: 0;transition: 1s;background-image:-webkit-linear-gradient(top,rgba(255,255,255,0),rgba(255,255,255,1));
+		height: 100%;width: 100%}
 		/* 图片遮盖层 */
+
+		.img_top{margin-top: 60px}
+		/* 图片_top_margin */
+
+		.img_bottom{margin-bottom:60px}
+		/* 图片_bottom_margin */
 
 	</style>
 </head>
@@ -81,7 +88,7 @@
 		<h2 class="gallery_header content_color_black title_font">Design<span class="content_color_pink title_font">_interactive/graphic</span></h2>
 				<div class="row">
 				<div class="gallery col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<a href="gallery_1.html" target="_blank">
+					<a href="eclipse.html" target="_blank">
 					<div class="img-wrap" id="img1"> 
 						<!-- 图片外层 -->
 						<!-- 遮盖层 -->
@@ -89,7 +96,7 @@
 							<div class="img_mask"></div>
 						</div>
 						<!-- 载入图片 -->
-						<img src="imgs/123.jpg" class="imgs_src">
+						<img src="imgs/eclipse_logo.png" class="imgs_src">
 						<!-- 图片描述 -->
 						<div class="img_container">
 						<h2 >
@@ -106,7 +113,7 @@
 						<div class="img_maskparent">
 							<div class="img_mask"></div>
 						</div>
-						<img src="imgs/123.jpg" class="imgs_src">
+						<img src="imgs/eclipse_logo.png" class="imgs_src">
 						<div class="img_container">
 						<h2 >
 							<span class="img_span">helloworld</span>
@@ -116,13 +123,13 @@
 					</div>
 					</a>
 				</div>
-				<div class="gallery col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="gallery col-lg-6 col-md-6 col-sm-12 col-xs-12 img_top img_bottom">
 					<a href="gallery_1.html" target="_blank">
 					<div class="img-wrap" id="img3"> 
 						<div class="img_maskparent">
 							<div class="img_mask"></div>
 						</div>
-						<img src="imgs/123.jpg" class="imgs_src">
+						<img src="imgs/eclipse_logo.png" class="imgs_src">
 						<div class="img_container">
 						<h2 >
 							<span class="img_span">helloworld</span>
@@ -132,13 +139,13 @@
 					</div>
 					</a>
 				</div>
-				<div class="gallery col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="gallery col-lg-6 col-md-6 col-sm-12 col-xs-12 img_top img_bottom">
 					<a href="gallery_1.html" target="_blank">
 					<div class="img-wrap" id="img4"> 
 						<div class="img_maskparent">
 							<div class="img_mask"></div>
 						</div>
-						<img src="imgs/123.jpg" class="imgs_src">
+						<img src="imgs/eclipse_logo.png" class="imgs_src">
 						<div class="img_container">
 						<h2 >
 							<span class="img_span">helloworld</span>
@@ -152,13 +159,13 @@
 
 		<h2 class="gallery_header content_color_black title_font">Art<span class="content_color_pink title_font">_painting/charcoal/drawing</span></h2>
 				<div class="row">
-					<div class="gallery col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="gallery col-lg-6 col-md-6 col-sm-12 col-xs-12 img_bottom">
 						<a href="gallery_1.html" target="_blank">
 						<div class="img-wrap" id="img5"> 
 							<div class="img_maskparent">
 								<div class="img_mask"></div>
 							</div>
-							<img src="imgs/123.jpg" class="imgs_src">
+							<img src="imgs/eclipse_logo.png" class="imgs_src">
 							<div class="img_container">
 							<h2 >
 								<span class="img_span">helloworld</span>
@@ -168,13 +175,13 @@
 						</div>
 						</a>
 					</div>
-					<div class="gallery col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="gallery col-lg-6 col-md-6 col-sm-12 col-xs-12 img_bottom">
 						<a href="gallery_1.html" target="_blank">
 						<div class="img-wrap" id="img6"> 
 							<div class="img_maskparent">
 								<div class="img_mask"></div>
 							</div>
-							<img src="imgs/123.jpg" class="imgs_src">
+							<img src="imgs/eclipse_logo.png" class="imgs_src">
 							<div class="img_container">
 							<h2 >
 								<span class="img_span">helloworld</span>
