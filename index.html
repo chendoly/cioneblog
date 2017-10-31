@@ -32,7 +32,7 @@
 		#header{height: 280px;padding: 10px 0 0 0} 
 		#about{height: 200px;height: 100% !important;} 
 		#contact{height: 250px;} 
-		.gallery_header{height: 80px;line-height: 80px;}
+		.gallery_header{height: 80px;line-height: 80px}
 		.gallery{height: 100%;margin: 0 0 20px}
 		#footer{text-align: center;}
 		.content_color_black{color: #5d5d5d}
@@ -62,6 +62,14 @@
 		.img_bottom{margin-bottom:60px}
 		/* 图片_bottom_margin */
 
+		/* 自适应属性 */
+		@media all and (max-width: 500px){
+			.h2_smallfontsize{
+				font-size: 24px;
+			}
+		}
+		
+
 	</style>
 </head>
 <body>
@@ -85,7 +93,7 @@
 		</div>
 	</div>
 	<div>
-		<h2 class="gallery_header content_color_black title_font">Design<span class="content_color_pink title_font">_interactive/graphic</span></h2>
+		<h2 class="gallery_header content_color_black title_font h2_smallfontsize">Design<span class="content_color_pink title_font h2_smallfontsize">_interactive/graphic</span></h2>
 				<div class="row">
 				<div class="gallery col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<a href="eclipse.html" target="_blank">
@@ -157,7 +165,7 @@
 				</div>
 				</div>
 
-		<h2 class="gallery_header content_color_black title_font">Art<span class="content_color_pink title_font">_painting/charcoal/drawing</span></h2>
+		<h2 class="gallery_header content_color_black title_font h2_smallfontsize">Art<span class="content_color_pink title_font h2_smallfontsize">_painting/charcoal/drawing</span></h2>
 				<div class="row">
 					<div class="gallery col-lg-6 col-md-6 col-sm-12 col-xs-12 img_bottom">
 						<a href="gallery_1.html" target="_blank">
