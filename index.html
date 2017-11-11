@@ -25,6 +25,11 @@
     	@font-face{
     				font-family: 'Adobecaslonpro';
 				      src: url('font/Adobecaslonpro.otf') format('OpenType');
+		}
+		
+		@font-face{
+    				font-family: 'ACaslonPro';
+				      src: url('font/ACaslonPro.otf') format('OpenType');
     	}
 
 
@@ -34,19 +39,20 @@
 		#contact{height: 250px;} 
 		.gallery_header{height: 80px;line-height: 80px}
 		.gallery{height: 100%;margin: 0 0 20px}
-		#footer{text-align: center;}
+		#footer{text-align: center;margin-top: 100px;margin-bottom: 30px}
 		.content_color_black{color: #5d5d5d}
 		.content_color_pink{color:#e369a8;}
 		.title_font{font-family: Arciform}
 		.p_font{font-family: Adobecaslonpro}
 
 		/*图片样式*/
-		.img-wrap{position: relative;}/*width: 400px;margin: 30px auto;*/
+		.img-wrap{position: relative;}
 		/* 图片外层CSS */
 		.imgs_src{width: 100%;transform: scale(1);transition: 1s;display: block}
 		/* 图片载入的样式 */
 		/* 图片描述层 */
-		.img_container{position: absolute;left: 0px;bottom: 20px;color: #101010;font-size: 26px;z-index: 20;}
+		.img_container{position: absolute;left: 0px;bottom: 20px;color: #101010;font-size: 26px;
+			z-index: 20;font-family:ACaslonPro}
 		.img_span{width:0;overflow: hidden;display: inline-block;height: 30px;line-height: 30px;}
 		/* 描述层标题 */
 		.img_strong{opacity: 0}
@@ -68,7 +74,6 @@
 				font-size: 24px;
 			}
 		}
-		
 
 	</style>
 </head>
@@ -81,7 +86,7 @@
 			<p class="p_font">Shiyun Sharon Zhou is a freelance designer and developer and for the past eight years he's worked for some of the UK's best digital agencies;producing award-winning work wherever he's been.</p>
 			<p class="p_font">Working at the very highest level as both a senior developer and senior designer,Colin provides his experience,knowledge and expertise to clients offering them something more than your average freelance.</p>
 		</div>
-		<div id="contact" class="col-lg-9 col-lg-offset-9 col-md-9 col-md-offset-9 col-sm-12 col-xs-12">
+		<div id="contact" class="col-lg-2 col-lg-offset-10 col-md-2 col-md-offset-10 col-sm-12 col-xs-12">
 			<h2 class="title_font">Contact<span class="content_color_pink">_</span></h2>
 			<div class="p_font">
 			<p>Email:</p>
@@ -108,7 +113,7 @@
 						<!-- 图片描述 -->
 						<div class="img_container">
 						<h2 >
-							<span class="img_span">title: eclipse green tea</span>
+							<span class="img_span">title:eclipse green tea</span>
 						</h2>
 						<strong class="img_strong">medium:branding</strong>
 						</div>
